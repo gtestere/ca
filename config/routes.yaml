@@ -1,0 +1,13 @@
+index:
+    path: /
+    controller: App\Controller\MainController::index
+
+api:
+    path: /api/{idHotel}/{dateStart}/{dateEnd}
+    controller: App\Controller\ApiController::getResults
+    methods: [GET]
+
+apiHotels:
+    path: /api/getHotels
+    controller: App\Controller\ApiController::getHotels
+    methods: [ GET ]
